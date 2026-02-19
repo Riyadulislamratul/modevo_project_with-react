@@ -21,7 +21,7 @@ const ProductSlider = () => {
     slidesToScroll: 1,
   };
   return (
-    <section>
+    <section className="mt-13">
         <div className='w-screen'>
             <Slider {...settings}>
             <div>
