@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutImage from "../assets/about.jpg"
-import Button from './Button'
+
 
 const About = () => {
 
@@ -9,6 +9,11 @@ const About = () => {
         backgroundPosition : "center",
         backgroundRepeat : "no-repeat",
         backgroundSize : "cover"
+    }
+    const WhiteButtonStyle = {
+        color : "black",
+        backgroundColor : "transparent",
+        border : "1px solid black"
     }
 
   return (
@@ -21,7 +26,7 @@ const About = () => {
                 <p className='font-jost text-[18px] text-gray-75 pb-7.5'>At Modevo, we blend timeless design with modern flair — creating pieces that inspire confidence, 
                     celebrate individuality, and redefine everyday elegance. From detail to silhouette, 
                     every piece tells a story of quality and character.</p>
-                <Button TagName="a" href="/shop" primary= {false}>Shop Now</Button>
+                <button style={WhiteButtonStyle} className="text-black py-2 lg:py-[14.5px] px-5 lg:px-8.5 bg-transparent uppercase cursor-pointer inline-block border border-white">Shop Now</button>
             </div>
             <div style={bgImage} className="">
 

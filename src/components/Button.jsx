@@ -8,7 +8,7 @@ const Button = ({ TagName = "button", children, primary = true, ...props }) => {
 			</TagName>
 		:	<TagName
 				{...props}
-				className="text-black py-2 lg:py-[14.5px] px-5 lg:px-8.5 bg-transparent uppercase cursor-pointer inline-block border border-black-222 "
+				className="text-black py-2 lg:py-[14.5px] px-5 lg:px-8.5 bg-white uppercase cursor-pointer inline-block "
 			>
 				{children}
 			</TagName>;
