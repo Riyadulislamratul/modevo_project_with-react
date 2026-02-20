@@ -5,6 +5,7 @@ import Featured from "../components/Feature";
 import Mini from "../components/Mini";
 import NewCollection from "../components/NewCollection";
 import ProductSlider from "../components/ProductSlider";
+import TodayDeal from "../components/TodayDeal";
 const HomePage = () => {
 	return (
 		<>
@@ -15,6 +16,7 @@ const HomePage = () => {
             <ProductSlider />
 			<Featured />
 			<NewCollection />
+			<TodayDeal />
 		</>
 	);
 };

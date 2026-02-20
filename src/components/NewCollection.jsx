@@ -9,7 +9,7 @@ import New5 from '../assets/new5.jpg'
 
 const NewCollection = () => {
   return (
-    <section className='mt-20'>
+    <section className='mt-20 mb-20'>
         <div className="container">
             <div className='grid grid-cols-2 gap-17.25'>
                 <div>
