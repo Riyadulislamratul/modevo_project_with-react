@@ -9,7 +9,7 @@ const FreshLook = () => {
         backgroundPosition: 'center'
     }
   return (
-    <section className='mt-19'>
+    <section className='my-20'>
         <div className="container" style={bgImage}>
             <div className=' items-center text-center py-25 px-85'>
                 <h2 className='font-jost text-[64px] leading-[80px] text-white mb-5'>Fresh Looks for Sunny Days</h2>

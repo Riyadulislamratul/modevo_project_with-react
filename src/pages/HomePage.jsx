@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Banner from "../components/Banner";
+import Blogs from "../components/Blogs";
 import Discount from "../components/Discount";
 import Featured from "../components/Feature";
 import FreshLook from "../components/FreshLook";
@@ -21,6 +22,7 @@ const HomePage = () => {
 			<TodayDeal />
 			<Subscribe />
 			<FreshLook />
+			<Blogs />
 		</>
 	);
 };
