@@ -8,6 +8,7 @@ import Mini from "../components/Mini";
 import NewCollection from "../components/NewCollection";
 import ProductSlider from "../components/ProductSlider";
 import Subscribe from "../components/Subscribe";
+import Testimonial from "../components/Testimonial";
 import TodayDeal from "../components/TodayDeal";
 const HomePage = () => {
 	return (
@@ -23,6 +24,7 @@ const HomePage = () => {
 			<Subscribe />
 			<FreshLook />
 			<Blogs />
+			<Testimonial />
 		</>
 	);
 };
