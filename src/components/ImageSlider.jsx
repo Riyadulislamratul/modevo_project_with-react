@@ -22,7 +22,7 @@ const ImageSlider = () => {
 		cssEase: "linear",
 	};
 	return (
-		<section>
+		<section className="my-25">
 			<div className="w-screen">
 				<Slider {...settings}>
 					<div>
