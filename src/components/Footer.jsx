@@ -153,8 +153,7 @@ const Footer = () => {
 				</div>
 				<div className="border-t border-t-[#D4D4D4] pt-7.5 pb-9.5">
 					<p className="text-center text-slate-500">
-						&#64;Copyright {new Date().getFullYear()} - Vereva Tempplate by
-						burdurstudio
+						&#64;Copyright {new Date().getFullYear()} - Md Riyadul Islam Ratul
 					</p>
 				</div>
 			</div>
