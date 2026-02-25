@@ -4,6 +4,7 @@ import Blogs from "../components/Blogs";
 import Discount from "../components/Discount";
 import Featured from "../components/Feature";
 import FreshLook from "../components/FreshLook";
+import GetInTouch from "../components/GetInTouch";
 import Mini from "../components/Mini";
 import NewCollection from "../components/NewCollection";
 import ProductSlider from "../components/ProductSlider";
@@ -25,6 +26,7 @@ const HomePage = () => {
 			<FreshLook />
 			<Blogs />
 			<Testimonial />
+			<GetInTouch />
 		</>
 	);
 };

@@ -3,7 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 
 const TestimonialSection = () => {
 	return (
-    <section className="mt-25 mb-30">
+    <section className="mt-25 mb-50">
 			<div className="container">
 				<div className="text-center mb-12">
 					<p className="mt-3 text-gray-500 max-w-2xl mx-auto">Portfolio</p>
