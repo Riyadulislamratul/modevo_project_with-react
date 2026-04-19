@@ -3,30 +3,36 @@ import bannerImage from "../assets/banner.jpg";
 import Button from "./Button";
 
 const Banner = () => {
-  const bgImage = {
-    background: `url(${bannerImage})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-  };
-
   return (
-    <section>
-      <div className="container" style={bgImage}>
-        <div style={bgImage} className="py-20 lg:pt-30 xl:pt-55 px-4 lg:px-27.25 lg:pb-60.5">
-          <div className="max-w-156">
-            <h1 className="text-[#222222] text-3xl md:text-4xl lg:text-[64px] font-jost tracking-[0.46%] leading-[1.3] font-medium">
+    <section
+      className="w-full bg-center bg-no-repeat bg-cover"
+      style={{ backgroundImage: `url(${bannerImage})` }}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        
+        <div className="flex items-center min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh]">
+          
+          <div className="max-w-xl">
+            
+            {/* Heading */}
+            <h1 className="text-[#222222] text-2xl sm:text-3xl md:text-4xl lg:text-[64px] font-jost leading-tight font-medium">
               Fresh Looks for Warmer Days
             </h1>
-            <p className="text-[#222222] text-[20px] font-jost tracking-[0.46%] leading-normal max-w-124 pt-5 pb-10">
+
+            {/* Description */}
+            <p className="text-[#222222] text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed pt-4 pb-6">
               Unveil bold layers and timeless silhouettes — designed to define
               your Spring/Summer 2027 look.
             </p>
-            <div className="flex gap-5 ">
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button Tagname="a">Shop Now</Button>
               <Button>Explore More</Button>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>

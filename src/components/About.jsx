@@ -1,40 +1,53 @@
-import React from 'react'
-import aboutImage from "../assets/about.jpg"
-
+import React from "react";
+import aboutImage from "../assets/about.jpg";
 
 const About = () => {
-
-    const bgImage = {
-        background : `url(${aboutImage})`,
-        backgroundPosition : "center",
-        backgroundRepeat : "no-repeat",
-        backgroundSize : "cover"
-    }
-    const WhiteButtonStyle = {
-        color : "black",
-        backgroundColor : "transparent",
-        border : "1px solid black"
-    }
+  const bgImage = {
+    backgroundImage: `url(${aboutImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
 
   return (
-    <section className='bg-gray-f3'>
-        <div className= "container">
-            <div className='grid grid-cols-2'>
-                <div className='pt-[190px] pb-[132px] pr-26'>
-                <h3 className='text-gray-75 font-jost pb-2 text-[18px]'>About US</h3>
-                <h1 className='font-jost text-[40px] pb-4'>Designed to Empower, Crafted to Last</h1>
-                <p className='font-jost text-[18px] text-gray-75 pb-7.5'>At Modevo, we blend timeless design with modern flair — creating pieces that inspire confidence, 
-                    celebrate individuality, and redefine everyday elegance. From detail to silhouette, 
-                    every piece tells a story of quality and character.</p>
-                <button style={WhiteButtonStyle} className="text-black py-2 lg:py-[14.5px] px-5 lg:px-8.5 bg-transparent uppercase cursor-pointer inline-block border border-white">Shop Now</button>
-            </div>
-            <div style={bgImage} className="">
+    <section className="bg-gray-f3 py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto px-4">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          
+          {/* Text Section */}
+          <div className="text-center lg:text-left">
+            <h3 className="text-gray-500 font-jost pb-2 text-base md:text-lg">
+              About Us
+            </h3>
 
-            </div>
-            </div>
+            <h1 className="font-jost text-2xl md:text-3xl lg:text-[40px] pb-4 leading-tight">
+              Designed to Empower, Crafted to Last
+            </h1>
+
+            <p className="font-jost text-base md:text-lg text-gray-600 pb-6 max-w-xl mx-auto lg:mx-0">
+              At Modevo, we blend timeless design with modern flair — creating
+              pieces that inspire confidence, celebrate individuality, and
+              redefine everyday elegance. From detail to silhouette, every piece
+              tells a story of quality and character.
+            </p>
+
+            <button className="text-black py-2 md:py-3 px-6 md:px-8 border border-black uppercase hover:bg-black hover:text-white transition">
+              Shop Now
+            </button>
+          </div>
+
+          {/* Image Section */}
+          <div
+            style={bgImage}
+            className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] rounded-md"
+          ></div>
+
         </div>
-    </section>
-  )
-}
 
-export default About
+      </div>
+    </section>
+  );
+};
+
+export default About;

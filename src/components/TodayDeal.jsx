@@ -1,44 +1,64 @@
-import React from 'react'
-import todayDeal from '../assets/todayDeal1.jpg'
-import todayDeal2 from '../assets/todayDeal2.jpg'
-import todayDeal3 from '../assets/todayDeal3.jpg'
+import React from "react";
+import todayDeal from "../assets/todayDeal1.jpg";
+import todayDeal2 from "../assets/todayDeal2.jpg";
+import todayDeal3 from "../assets/todayDeal3.jpg";
 import DiscountCard from "./DiscountCard";
 
 const TodayDeal = () => {
-    const bgImage = {
-        background: `url(${todayDeal})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-    }
-  
-    return (
-    <section className='mt-20'>
-        <div className="container">
-            <div className='items-center text-center'>
-                <p className='font-jost mb-2 text-[18px] leading-[27px] text-gray-75'>Today Deal's</p>
-                <h2 className='font-jost mb-4 text-[40px] leading-[55px] text-black-222'>Deal of the day</h2>
-                <p className='font-jost mb-[45px] text-[18px] leading-[27px] text-gray-75'>Limited-time styles at unbeatable prices, Shop today’s hottest picks before they’re gone!</p>
-            </div>
-            <div className='grid grid-cols-2 gap-8'>
-                <div className='relative h-150' style={bgImage}>
+  return (
+    <section className="py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        
+        {/* Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
+          <p className="font-jost text-sm sm:text-base md:text-lg text-gray-500 mb-2">
+            Today’s Deals
+          </p>
 
-                </div>
-                <div className='flex flex-col gap-12'>
-                    <DiscountCard
-                        title={"It’s in the Bag: Limited Deals"}
-                        discount={"SALE UP TO 25%"}
-                        img={todayDeal2}
-                    />
-                    <DiscountCard
-                        title={"Make a Statement This Season"}
-                        discount={"SALE UP TO 25%"}
-                        img={todayDeal3}
-                    />
-                </div>
-            </div>
+          <h2 className="font-jost text-2xl sm:text-3xl md:text-4xl lg:text-[40px] leading-tight text-[#222] mb-4">
+            Deal of the Day
+          </h2>
+
+          <p className="font-jost text-sm sm:text-base md:text-lg text-gray-500 leading-relaxed">
+            Limited-time styles at unbeatable prices. Shop today’s hottest picks before they’re gone!
+          </p>
         </div>
-    </section>
-  )
-}
 
-export default TodayDeal
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+          
+          {/* LEFT BIG IMAGE */}
+          <div
+            className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-full rounded-lg overflow-hidden"
+            style={{
+              backgroundImage: `url(${todayDeal})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            {/* Optional overlay */}
+            <div className="absolute inset-0 bg-black/20"></div>
+          </div>
+
+          {/* RIGHT CARDS */}
+          <div className="flex flex-col gap-6 md:gap-8">
+            <DiscountCard
+              title="It’s in the Bag: Limited Deals"
+              discount="SALE UP TO 25%"
+              img={todayDeal2}
+            />
+
+            <DiscountCard
+              title="Make a Statement This Season"
+              discount="SALE UP TO 25%"
+              img={todayDeal3}
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TodayDeal;
