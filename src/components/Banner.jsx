@@ -12,7 +12,7 @@ const Banner = () => {
         
         <div className="flex items-center min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh]">
           
-          <div className="max-w-xl">
+          <div className="max-w-xl lg:py-95">
             
             {/* Heading */}
             <h1 className="text-[#222222] text-2xl sm:text-3xl md:text-4xl lg:text-[64px] font-jost leading-tight font-medium">
